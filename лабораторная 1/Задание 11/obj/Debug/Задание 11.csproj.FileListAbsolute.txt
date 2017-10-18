@@ -1,0 +1,6 @@
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\Задание 11\obj\Debug\Задание 11.csproj.CoreCompileInputs.cache
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\Задание 11\bin\Debug\Задание 11.exe.config
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\Задание 11\bin\Debug\Задание 11.exe
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\Задание 11\bin\Debug\Задание 11.pdb
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\Задание 11\obj\Debug\Задание 11.exe
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\Задание 11\obj\Debug\Задание 11.pdb

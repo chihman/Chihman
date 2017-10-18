@@ -1,0 +1,6 @@
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\задание 6\bin\Debug\задание 6.exe.config
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\задание 6\bin\Debug\задание 6.exe
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\задание 6\bin\Debug\задание 6.pdb
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\задание 6\obj\Debug\задание 6.csproj.CoreCompileInputs.cache
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\задание 6\obj\Debug\задание 6.exe
+C:\Users\pro-5\Desktop\Chihman\лабораторная 1\задание 6\obj\Debug\задание 6.pdb

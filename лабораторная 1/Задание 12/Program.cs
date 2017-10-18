@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Задание_5
+namespace Задание_12
 {
     class Program
     {
@@ -14,13 +14,16 @@ namespace Задание_5
             a = Console.ReadLine();
             String b;
             b = Console.ReadLine();
-            Console.Write(b + a);
-          
-            Console.Write(b);
-            Console.Write(a);
+            String c;
+            c = Console.ReadLine();
+            String d;
+            d = Console.ReadLine();
+            String e;
+            e = Console.ReadLine();
 
-            Console.WriteLine(" {0:F4} ", b);
-            Console.WriteLine(" {0:F4}", a);
+            Console.WriteLine("User ID="+a+";Password="+b+";Host="+c+";Port="+d+"; Database="+e+"");
+
+
 
 
 
