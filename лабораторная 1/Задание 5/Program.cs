@@ -14,13 +14,19 @@ namespace Задание_5
             a = Console.ReadLine();
             String b;
             b = Console.ReadLine();
-            Console.Write(b + a);
           
-            Console.Write(b);
-            Console.Write(a);
+            Console.Write((b)+" " + a);
 
-            Console.WriteLine(" {0:F4} ", b);
-            Console.WriteLine(" {0:F4}", a);
+            Console.Write("\n");
+
+            Console.Write(b  );
+            Console.Write(" ");
+            Console.Write(a );
+
+            Console.Write("\n");
+
+            Console.WriteLine("{0}", b);
+            Console.WriteLine("{0}", a);
 
 
 

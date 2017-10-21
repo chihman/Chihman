@@ -5,3 +5,10 @@ C:\Users\pro-5\Desktop\Chihman\лабораторная 1\Задание 5\obj\D
 C:\Users\pro-5\Desktop\Chihman\лабораторная 1\Задание 5\obj\Debug\Задание 5.csproj.CoreCompileInputs.cache
 C:\Users\pro-5\Desktop\Chihman\лабораторная 1\Задание 5\obj\Debug\Задание 5.exe
 C:\Users\pro-5\Desktop\Chihman\лабораторная 1\Задание 5\obj\Debug\Задание 5.pdb
+C:\Users\d\Desktop\Chihman\лабораторная 1\Задание 5\bin\Debug\Задание 5.exe.config
+C:\Users\d\Desktop\Chihman\лабораторная 1\Задание 5\bin\Debug\Задание 5.exe
+C:\Users\d\Desktop\Chihman\лабораторная 1\Задание 5\bin\Debug\Задание 5.pdb
+C:\Users\d\Desktop\Chihman\лабораторная 1\Задание 5\obj\Debug\Задание 5.csprojResolveAssemblyReference.cache
+C:\Users\d\Desktop\Chihman\лабораторная 1\Задание 5\obj\Debug\Задание 5.csproj.CoreCompileInputs.cache
+C:\Users\d\Desktop\Chihman\лабораторная 1\Задание 5\obj\Debug\Задание 5.exe
+C:\Users\d\Desktop\Chihman\лабораторная 1\Задание 5\obj\Debug\Задание 5.pdb

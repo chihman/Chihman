@@ -20,6 +20,12 @@ namespace задание_4
             Console.Write(b);
             Console.Write("!");
 
+            String c;
+            c = Console.ReadLine();
+            Console.Write("Программирование это ");
+            Console.Write("{0}", c);
+            Console.Write("!");
+
 
 
         }
