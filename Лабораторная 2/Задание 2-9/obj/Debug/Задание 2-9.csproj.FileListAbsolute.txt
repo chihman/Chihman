@@ -1,0 +1,6 @@
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задание 2-9\bin\Debug\Задание 2-9.exe.config
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задание 2-9\bin\Debug\Задание 2-9.exe
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задание 2-9\bin\Debug\Задание 2-9.pdb
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задание 2-9\obj\Debug\Задание 2-9.csproj.CoreCompileInputs.cache
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задание 2-9\obj\Debug\Задание 2-9.exe
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задание 2-9\obj\Debug\Задание 2-9.pdb

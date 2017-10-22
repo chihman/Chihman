@@ -1,0 +1,7 @@
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задане 2-4\bin\Debug\Задане 2-4.exe.config
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задане 2-4\bin\Debug\Задане 2-4.exe
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задане 2-4\bin\Debug\Задане 2-4.pdb
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задане 2-4\obj\Debug\Задане 2-4.csprojResolveAssemblyReference.cache
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задане 2-4\obj\Debug\Задане 2-4.csproj.CoreCompileInputs.cache
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задане 2-4\obj\Debug\Задане 2-4.exe
+C:\Users\d\Desktop\Chihman\Лабораторная 2\Задане 2-4\obj\Debug\Задане 2-4.pdb
