@@ -4,3 +4,10 @@ C:\Users\d\Desktop\Chihman\Лабораторная 2\Задание 2-9\bin\Deb
 C:\Users\d\Desktop\Chihman\Лабораторная 2\Задание 2-9\obj\Debug\Задание 2-9.csproj.CoreCompileInputs.cache
 C:\Users\d\Desktop\Chihman\Лабораторная 2\Задание 2-9\obj\Debug\Задание 2-9.exe
 C:\Users\d\Desktop\Chihman\Лабораторная 2\Задание 2-9\obj\Debug\Задание 2-9.pdb
+C:\Users\pro-5\Desktop\Chihman\Лабораторная 2\Задание 2-9\bin\Debug\Задание 2-9.exe.config
+C:\Users\pro-5\Desktop\Chihman\Лабораторная 2\Задание 2-9\bin\Debug\Задание 2-9.exe
+C:\Users\pro-5\Desktop\Chihman\Лабораторная 2\Задание 2-9\bin\Debug\Задание 2-9.pdb
+C:\Users\pro-5\Desktop\Chihman\Лабораторная 2\Задание 2-9\obj\Debug\Задание 2-9.csprojResolveAssemblyReference.cache
+C:\Users\pro-5\Desktop\Chihman\Лабораторная 2\Задание 2-9\obj\Debug\Задание 2-9.csproj.CoreCompileInputs.cache
+C:\Users\pro-5\Desktop\Chihman\Лабораторная 2\Задание 2-9\obj\Debug\Задание 2-9.exe
+C:\Users\pro-5\Desktop\Chihman\Лабораторная 2\Задание 2-9\obj\Debug\Задание 2-9.pdb
