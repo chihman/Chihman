@@ -16,6 +16,15 @@ namespace Задание_2_5
             r = Console.ReadLine();
             Double R;
             R = Double.Parse(r);
+
+
+
+            if (R <= 0)
+            {
+                Console.Write("Значение radius должно быть положительным ");
+                return;
+            }
+
             Double Vol;
             Vol = (4 * Math.PI * (R*R*R))/3;
             Console.WriteLine("{0:F4}", Vol);

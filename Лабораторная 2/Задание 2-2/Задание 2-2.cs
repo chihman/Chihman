@@ -17,6 +17,17 @@ namespace Задание_2_2
             edge = Console.ReadLine();
             Double edge2;
             edge2 = Double.Parse(edge);
+
+            if (edge2 <= 0)
+            {
+                Console.Write("Значение edge должно быть положительным ");
+                return;
+            }
+
+
+
+
+
             Double area;
               area = edge2 * edge2 * 6;
             Console.WriteLine(area);

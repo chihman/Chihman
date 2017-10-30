@@ -16,6 +16,15 @@ namespace Задане_2_4
             Double R;
             R= Double.Parse(r);
             Double cir;
+            if (R<=0)
+            {
+                Console.Write("Радиус должен быть положительным ");
+                return;
+            }
+
+
+
+
             cir = 2 * Math.PI * R;
             Console.WriteLine("{0:F4}", cir);
 
