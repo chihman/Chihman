@@ -30,31 +30,37 @@ namespace Задание_5_9
                 return;
             }
 
+            //Write('введите площадь круга и квадрата');
+            //Readln(s1, s2);
+            //A:= sqrt(s2);
+            //R:= sqrt(s / 3.14);
+            //If(r < a / 2) then writeln(' круг уместится в квадрате') 
+            //Else writeln(' круг не уместится в квадрате');
+            //If(a * sqrt(2)) > (4 * r) then writeln('квадрат уместится в круге')
+            //Else Writeln('квадрат не уместится в круге');
 
-            Console.WriteLine("c: ");
-            double c = Double.Parse(Console.ReadLine());
+            double A, B;
+            A = Math.Sqrt(Ss);
+            B = Math.Sqrt(Sc / 3.14);
 
-            double D;
-            D = b * b - 4 * a * c;
-
-
-
-
-
-            if (D == 0)
+            if (B < A / 2)
             {
-                Console.WriteLine("Вещественных корней уравнения {0:F0}x^2 + {1:F0}x + {2:F0} = 0  один корень", a, b, c);
-                return;
+                Console.WriteLine("круг уместится в квадрате");
             }
-            if (D < 0)
-            {
-                Console.WriteLine("Вещественных корней уравнения {0:F0}x^2 + {1:F0}x + {2:F0} = 0  нет корней", a, b, c);
-                return;
-            }
-            if (D > 0)
-            {
-                Console.WriteLine("Вещественных корней уравнения {0:F0}x^2 + {1:F0}x + {2:F0} = 0  Два корня", a, b, c);
-                return;
-            }
+            else {
+                Console.WriteLine("Круг не поместится в квадрате");
+        }
+        }
     }
 }
+            
+
+
+
+         
+
+
+
+
+
+            
