@@ -18,34 +18,31 @@ namespace Задание_5_14
             Console.WriteLine("Z: ");
             double Z = Double.Parse(Console.ReadLine());
             double x, y, z;
-           
-       
-
-
-            if (X>= -3 && X<=5)
+            
+            if (X >= -3 && X <= 5)
             {
                 x = X;
-                Console.WriteLine(x+" X принадлежит " );
+                Console.Write(" " + x);
             }
             if (Y >= -3 && Y <= 5)
             {
                 y = Y;
-                Console.WriteLine(y+" Y принадлежит ");
+                Console.Write(" " + y);
             }
             if (Z >= -3 && Z <= 5)
             {
                 z = Z;
-                Console.WriteLine(z+" Z принадлежит ");
+                Console.Write(" " + z);
             }
 
-            
-            //Console.WriteLine(x + " " + y + " " + z); не работает!?!
 
 
 
 
-            
 
-            }
+
+
+
+        }
     }
 }
