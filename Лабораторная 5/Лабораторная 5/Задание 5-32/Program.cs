@@ -30,55 +30,50 @@ namespace Задание_5_32
 
             Console.WriteLine("Введите данные H2: ");
             double H2 = Double.Parse(Console.ReadLine());
-
+            if (H1 < 1 || H2 < 1)
+            {
+                Console.WriteLine("Высота далжна быть больше 0");
+            }
             Console.WriteLine("Введите данные W2: ");
             double W2 = Double.Parse(Console.ReadLine());
-            double X, Y, XX, YY, A, B, W3, Y3;
+
+            if (X1 + W1 < X2 || Y1 + H1 < Y2 || X2 + W2 < X1 || Y2 + H2 < Y1)
+            { Console.WriteLine("Не пересекаются");
+                return;
+            };
+
+            double X, Y, XX, YY, A, B, HH, XW;
+            XW = 0;
+            XX = 0;
+            HH = 0;
             X = X1 + W1;
             Y = Y1 + H1;
             XX = X2 + W2;
             YY = Y2 + H2;
 
-            //ширина
-            X = X1 + W1;
-            XX = X2 + W2;
-
-            if (XX <= X)
-            {
-                W3 = XX;
-            }
-            else { W3 = X; }
-
-            if (X1 >= X2 || Y1 >= Y2)
-            {
-                //ПЕРВАЯ ЛЕВАЯ ТОЧКА
+            if (X1 >= X2 && Y1 >= Y2)
+            {               
                 A = X1;
                 B = Y1;
-                W3 = X2;
-
             }
+
             else
-            { A = X2;
+            {
+                A = X2;
                 B = Y2;
             }
 
-           
+            if (XX < X)
+            { XW = XX - A; }
+            else { XW = X - A; }
 
-            
+            if (YY < Y)
+            { HH = YY - B; }
+            else
+            { HH = Y - B; }
 
-            //высота
-            Y = Y1 + H1;
-            YY = Y2 + H2;
+            Console.WriteLine("\"x:\" {0:F0},\"y:\" {1:F0},\"w:\"{2:F0},\"h:\"{3:F0}", A, B, XW, HH);
 
-            if (YY <= Y)
-            { Y3 = YY; }
-            else { Y3 = Y; }
-
-
-            Console.WriteLine("\"x:\" {0:F0},\"y:\" {1:F0},\"w:\"{2:F0},\"h:\"{3:F0}", A, B, W3, Y3);
-
-        
-    
         }
     }
 }
