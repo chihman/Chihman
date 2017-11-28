@@ -10,15 +10,16 @@ namespace Задание_6_14
     {
         static void Main(string[] args)
         {
-            double a, b, n, c, z;
+            int a, b, n,  z;
+            long c;
             n = 0;
             b = 0;
             c = 0;
             z = 0;
             Console.Write("Введите А ");
-            a = Convert.ToDouble(Console.ReadLine());
+            a = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите B ");
-            b = Convert.ToDouble(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
             if (a > b)
             {
                 c = b;
@@ -39,6 +40,7 @@ namespace Задание_6_14
 
                 }
             }
+            
             Console.WriteLine(c);
 
 

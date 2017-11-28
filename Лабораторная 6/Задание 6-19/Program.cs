@@ -14,13 +14,15 @@ namespace Задание_6_19
             c = 0;
             n = 0;
             i = 0;
-            Console.Write(" Введите число  ");
-            n = Convert.ToDouble(Console.ReadLine());
-            while (n > 83 || n < 199)
+            
+            while (n <= 83 || n >= 199)
             {
-                if (n < 83)
+                Console.Write(" Введите число  ");
+                n = Convert.ToDouble(Console.ReadLine());
+                
+                if (n <= 83)
                 { c = c + 1; }
-                if (n > 199)
+                if (n >= 199)
                 { i = i + 1; }
                
             }
