@@ -51,8 +51,10 @@ namespace Задание_6_37
                 Q = j - W;
                 while (Q > i)
                 {
-                    
-                    Console.Write("#");
+                    if (i <j)
+                    {
+                        Console.Write("#");
+                    }
                     i = i + 1;
                 }
 
