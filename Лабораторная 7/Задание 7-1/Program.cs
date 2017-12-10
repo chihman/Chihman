@@ -13,8 +13,8 @@ namespace Задание_7_1
             string a = Console.ReadLine();
             string input = "abcdefwxyz";
             if (input.Contains(a))
-            { Console.Write("Содержит"); }
-            else { Console.Write("не Содержит"); }
+            { Console.Write(" Содержит "); }
+            else { Console.Write(" не Содержит "); }
         }
     }
 }
