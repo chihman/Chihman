@@ -12,7 +12,7 @@ namespace Задание_7_6
         {
 
             String a, b, c;
-            int x, y;
+            int x, y, v;
             Console.Write("Введите СА ");
             a = Console.ReadLine();
 
@@ -24,10 +24,21 @@ namespace Задание_7_6
             y = Q.IndexOf(b);
             if (x < y)
             {
-                c = Q.Substring(x-1, y);
+                v = y - x;
+                x = x + 1;
+                v = v - 1;
+                c = Q.Substring(x, v);
             }
-            else { c = Q.Substring(y-1,x); }
+            else
+            {
+                v = x - y;
+                y = y + 1;
+                v = v - 1;
+                c = Q.Substring(y, v);
+            }
             Console.Write(c);
+
+
         }
     }
 }

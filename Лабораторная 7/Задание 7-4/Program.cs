@@ -10,20 +10,29 @@ namespace Задание_7_4
     {
         static void Main(string[] args)
         {
+            int i = 0, x = 0, b = 0, s = 0;
             string Q = "abcdacadbacdaabaadc";
             Console.Write(" введите данные ");
             string a = Console.ReadLine();
-
-            int i = 0, x = 0;
+            s = a.Length;
+            if (s!=2)
+            {
+                Console.Write("Вводимая строка должна содержать ровно 2 символа ");
+            }
+            
             while (i < 19)
             {
-                i=i+2;
-                x = Q.IndexOf(a);
-
-                Console.Write(x);
+                x = Q.IndexOf(a, b);
+                if (b == x)
+                {
+                    b = x;
+                    Console.Write(x + " ");
+                }
+                i = i + 1;
+                b = b + 1;
             }
 
-            //no
+           
         }
     }
 }

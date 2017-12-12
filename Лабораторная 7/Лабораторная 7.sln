@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание 7-1", "Задание 7-1\Задание 7-1.csproj", "{57261BFE-5F7D-43D5-A2BE-960530422205}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание 7-7", "Задание 7-7\Задание 7-7.csproj", "{EE56784E-B51C-4A40-A07F-C5910A0AB2E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание 7-12", "Задание 7-12\Задание 7-12.csproj", "{844DE650-62D1-4B2B-9134-F287A967E426}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание 7-8", "Задание 7-8\Задание 7-8.csproj", "{25596988-F147-428F-8EF0-C58E8D8BA154}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{844DE650-62D1-4B2B-9134-F287A967E426}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{844DE650-62D1-4B2B-9134-F287A967E426}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{844DE650-62D1-4B2B-9134-F287A967E426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25596988-F147-428F-8EF0-C58E8D8BA154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25596988-F147-428F-8EF0-C58E8D8BA154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25596988-F147-428F-8EF0-C58E8D8BA154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25596988-F147-428F-8EF0-C58E8D8BA154}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
