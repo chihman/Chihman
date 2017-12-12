@@ -13,29 +13,30 @@ namespace Задание_7_5
             int a, b;
             String c;
             Console.Write("Введите СА ");
-            a = Convert.ToInt32(Console.ReadLine());
+            a =Convert.ToInt32( Console.ReadLine());
             if (a < 0)
             {
                 Console.Write("Значение CA должно быть в интервале [0,длина строки)");
                 return;
             }
+
             Console.Write("Введите СB ");
             b = Convert.ToInt32(Console.ReadLine());
             if (b < 0)
             {
-                Console.Write("Значение CB должно быть в интервале [0,длина строки)");
+                Console.Write("Значение Cb должно быть в интервале [0,длина строки)");
                 return;
             }
-            if (a > b)
-            { Console.Write("Значение CA должно быть меньше CB");
+            if (b < a)
+            {
+                Console.Write("Значение CA должно быть меньше CB");
                 return;
             }
 
-
-            string input = "abcdefwxyz";
-
-            b = b - a;
-            c = input.Substring(a, (b+1));
+            string Q = "abcdefwxyz";
+            c = Q.Substring(a, b+1);
+           
+           
             Console.Write(c);
         }
     }

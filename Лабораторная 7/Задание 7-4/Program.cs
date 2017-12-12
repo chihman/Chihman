@@ -12,23 +12,18 @@ namespace Задание_7_4
         {
             string Q = "abcdacadbacdaabaadc";
             Console.Write(" введите данные ");
-            string A = Console.ReadLine();
+            string a = Console.ReadLine();
 
-            int b = 0, a = 0, x = 0;
-            a = Q.IndexOf(ca);
-            b = Q.IndexOf(cb);
-            if (a > b)
+            int i = 0, x = 0;
+            while (i < 19)
             {
-                x = a - b - 1;
+                i=i+2;
+                x = Q.IndexOf(a);
+
                 Console.Write(x);
-                return;
             }
-            if (a < b)
-            {
-                x = b - a - 1;
-                Console.Write(x);
-                return;
-            }
+
+            //no
         }
     }
 }

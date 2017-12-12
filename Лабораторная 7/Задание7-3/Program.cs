@@ -39,13 +39,13 @@ namespace Задание7_3
             if (a > b)
             {
                 x = a - b - 1;
-                Console.Write(x);
+                Console.Write(x + " \n ");
                 return;
             }
             if (a < b)
             {
                 x = b - a - 1;
-                Console.Write(x);
+                Console.Write(x+" \n ");
                 return;
             }
         }
