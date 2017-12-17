@@ -23,7 +23,7 @@ namespace Задание_7_4
                 Console.Write(x);
             }
 
-            //no
+           
         }
     }
 }
