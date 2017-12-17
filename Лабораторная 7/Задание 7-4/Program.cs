@@ -10,11 +10,6 @@ namespace Задание_7_4
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-
-=======
-            int i = 0, x = 0, b = 0, s = 0;
->>>>>>> c7f955ac79f9189108b7b69f28feb0c447dfbdfb
             string Q = "abcdacadbacdaabaadc";
             Console.Write(" введите данные ");
             string a = Console.ReadLine();
