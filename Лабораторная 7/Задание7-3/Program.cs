@@ -13,12 +13,9 @@ namespace Задание7_3
             string Q = "abcdefwxyz";
             Console.Write(" введите са ");
             string ca = Console.ReadLine();
-            if (Q.Contains(ca))
+            if (!Q.Contains(ca))
             {
-               
-            }
-            else
-            {
+              
                 Console.Write(" Значение CA отсутствует в строке ");
                 return;
             }

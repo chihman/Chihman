@@ -26,9 +26,6 @@ namespace Задание_6_25
             {
                 i = i + 1;
                 Console.Write("#");
-
-
-
             }
             while (I < n)
             {   I = I + 1;
