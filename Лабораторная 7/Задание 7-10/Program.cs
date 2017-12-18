@@ -14,34 +14,33 @@ namespace Задание_7_10
 
             Console.Write(" введите данные ");
             string a = Console.ReadLine();
+            string n, m;
+            int i = 0, x =0, b = 0, s = 0;
+            s = a.Length;
 
-            int z;
-            z = Q.Length; //длинна строки
-            int i = 0, x=0, c = 0;
-            string v;
-          
+            if (s != 2)
+            {
+                Console.Write("Вводимая строка должна содержать ровно 2 символа ");
+            }
+
             while (i < 19)
             {
+                x = Q.IndexOf(a, b);
+                if (b == x)
+                {
 
-
-
-                c = Q.IndexOf(a); //место переменной
-
-                v = Q.Substring(0, c);
-                Console.Write(v);              
-                x = c;
-
-                c = Q.IndexOf(a);
-                v = Q.Substring(x, c);
-                Console.Write(v);
-                c = Q.IndexOf(a);
-                v = Q.Substring(c, z);
-                Console.Write(v);
-                i = i + 2;
-                //no
+                    Console.Write(" ");
+                }
+                else
+                {
+                    n = Q.Substring(x, b);
+                    Console.Write(n);
+                }
+                i = i + 1;
+                b = b + 1;
             }
-            
-            
+
+
         }
     }
 }

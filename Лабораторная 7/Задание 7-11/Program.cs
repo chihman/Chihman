@@ -10,12 +10,31 @@ namespace Задание_7_11
     {
         static void Main(string[] args)
         {
-            c = x;
-            v = Q.Substring(x, c);
-            Console.Write(v);
-            v = Q.Substring(x, z);
-            Console.Write(v);
-            c = Q.IndexOf(a); //место переменной
+
+            Console.Write(" введите данные ");
+            string Q = Console.ReadLine();
+            String A, B;
+            int z;
+            z = Q.Length; //длинна строки
+            B = Q.Substring(z-1, 1);
+            if (B != "\"")
+            {
+                Console.Write(" Строка должна начинаться и заканчиваться кавычкой ");
+                return;
+            }
+            A = Q.Substring(0, 1);
+            if (A != "\"")
+            {
+                Console.Write(" Строка должна начинаться и заканчиваться кавычкой ");
+                return;
+            }
+            string s2 = Q.TrimStart("\"".ToCharArray()); //удаляет знак 
+            string c = s2.TrimEnd("\"".ToCharArray()); //удаляет знак
+            string w = c.Trim(); //  Удалить пробелы с начала и конца строки.
+
+            Console.Write(w);
+
         }
     }
+
 }
