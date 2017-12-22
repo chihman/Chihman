@@ -12,6 +12,8 @@ namespace Задание_8_5
         {
             int a, b, i, c;
             i = 0;
+            string m ;
+            m = "l";
             Console.Write(" Введите b ");
             a = Convert.ToInt32(Console.ReadLine());
             Console.Write(" Введите e ");
@@ -25,32 +27,51 @@ namespace Задание_8_5
                 Console.Write("Строка пуста");
                 return;
             }
-
             String[] arr = Q.Split(' ');
-            c = arr.Length;
-
-
+            c = arr.Length;// dlinna massiva
             if (a < 0 || a > c)
-            { Console.Write("Число B должно быть в интервале [0, размер массива)"); }
-            if (b < 0 || b > c)
-            { Console.Write("Число E должно быть в интервале [0, размер массива)"); }
-            if (a < b)
             {
-                while (a + i <= b)
+                Console.Write("Число Р должно быть в интервале [0, размер массива)");
+                return;
+            }
+            if (b < 0 || b > c)
+            {
+                Console.Write("Число Q должно быть в интервале [0, размер массива)");
+                return;
+            }
+
+
+            while (i < c)
+            {
+                if (i == a)
                 {
-                    Console.Write(arr[a + i] + " ");
-                    i++;
+                    m = arr[i];
+                    arr[i] = arr[b];
                 }
+               
+
+                i++;
+            };
+            i = 0;
+            while (i < c)
+            {
+                if (i == b)
+                {
+                    arr[i] = m;
+                }
+                Console.Write(arr[i] );
+                i++;
 
             }
-            else
+            while (i < c)
             {
-                while (b + i <= a)
-                {
-                    Console.Write(arr[b + i] + " ");
-                    i++;
-                }
+               
+                Console.Write(arr[i]);
+                i++;
             }
         }
+
+
+
     }
 }
