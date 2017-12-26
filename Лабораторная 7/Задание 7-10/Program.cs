@@ -23,24 +23,7 @@ namespace Задание_7_10
                 Console.Write("Вводимая строка должна содержать ровно 2 символа ");
             }
 
-            while (i < 19)
-            {
-                x = Q.IndexOf(a, b);
-                if (b == x)
-                {
-
-                    Console.Write(" ");
-                }
-                else
-                {
-                    n = Q.Substring(x, b);
-                    Console.Write(n);
-                }
-                i = i + 1;
-                b = b + 1;
-            }
-
-
+            Console.WriteLine(Q.Replace(a, " "));
         }
     }
 }

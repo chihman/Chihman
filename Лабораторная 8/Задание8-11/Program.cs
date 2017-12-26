@@ -51,7 +51,7 @@ namespace Задание8_11
 
                 while (i < tl)
                 {
-                    if (tm[I] == lm[i])
+                    if (lm[i]==tm[I])
                     {
                         Console.Write("+");
                     }

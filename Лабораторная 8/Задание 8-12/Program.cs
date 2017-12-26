@@ -40,9 +40,9 @@ namespace Задание_8_12
 
             ///////////////
 
-            while (I < L2)
+            while (I < L1)
             {
-                while (L1 > i)
+                while (L2 > i)
                 {
                     if (arr1[I] == arr2[i])
                     {
