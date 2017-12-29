@@ -10,14 +10,15 @@ namespace Задание_8_20
     {
         static void Main(string[] args)
         {
-            int i, L, a, u,j;
+            int i, L, a, j;
+            a = 0;
             j = 1;
             i = 0;
             int n = 0;
-            u = 0;
-            Console.Write(" Введите данные В ");
+
+            Console.Write(" Введите данные p ");
             int f1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write(" Введите данные В ");
+            Console.Write(" Введите данные q ");
             int f2 = Convert.ToInt32(Console.ReadLine());
 
             Console.Write(" Введите данные   ");
@@ -31,21 +32,30 @@ namespace Задание_8_20
             String[] arr = Q.Split(' ');
             L = arr.Length;// dlinna massiva
 
-
-            //////////
-           
-            while (j <= f2)
+            if (f1 > L || f2 > L)
             {
-                a = Convert.ToInt32(arr[f1+j]);
-                n = Convert.ToInt32(arr[f1+i]);
-                if (n < a)
-                { u = n; }
+                Console.Write("oshibka");
+                return;
+            }
+            if (f2 <= 0 || f1 <= 0)
+            { Console.Write("oshibka"); return; }
+            
+            //////////
 
-                j = j + 1;
+            a = Convert.ToInt32(arr[f1]);
+            while (i <= L)
+            {
+                if (i >= f1 && i <= f2)
+                {
+                    n = Convert.ToInt32(arr[i]);
+                    if (n < a)
+                    { a = n; }
+
+                }
                 i = i + 1;
             }
             i = 0;
-            Console.Write(u+" ");
+            Console.Write(a + " ");
 
         }
     }

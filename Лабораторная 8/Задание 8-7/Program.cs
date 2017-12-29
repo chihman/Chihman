@@ -26,8 +26,9 @@ namespace Задание_8_7
             String[] arr = Q.Split(' ');
             L = arr.Length;// dlinna massiva
             string[] arr2 = new string[L];
-          
-            
+            if (s<0)
+            { s = s * -1; }
+            s = s % L;
             g = s;
             n = L - s;
             t = L - n;

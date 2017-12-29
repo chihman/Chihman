@@ -45,17 +45,18 @@ namespace Задание8_11
             Console.Write("\n");
             //////
             I = 0;
-            while (I !=Hl )
+            while (I <Hl )
             {
                 Console.Write(lm[I] + " ");
-
+                
+                int r = tl - Hl; // разница длинны
                 while (i < tl)
                 {
-                    if (lm[i]==tm[I])
+                    if (lm[I]==tm[i])
                     {
-                        Console.Write("+");
+                        Console.Write("+ ");
                     }
-                    else { Console.Write("  "); }
+                    else { Console.Write("   "); }
                     i = i + 1;
                 }
                 i = 0;
@@ -67,7 +68,7 @@ namespace Задание8_11
             while (i < tl)
             {
                
-                    Console.Write("---");
+                    Console.Write("-----");
                
                 i = i + 1;
             }
