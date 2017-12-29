@@ -14,8 +14,8 @@ namespace Задание_7_10
 
             Console.Write(" введите данные ");
             string a = Console.ReadLine();
-            string n, m;
-            int i = 0, x =0, b = 0, s = 0;
+           
+            int  s = 0;
             s = a.Length;
 
             if (s != 2)
