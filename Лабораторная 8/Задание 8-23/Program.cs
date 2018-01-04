@@ -40,6 +40,10 @@ namespace Задание_8_23
                 }
                 i = i + 1;
             }
+            if ()
+            {
+                Console.WriteLine("втречается);
+            }
            
             Console.Write(a + " ");
         }
