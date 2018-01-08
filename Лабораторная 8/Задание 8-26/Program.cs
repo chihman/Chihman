@@ -4,20 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Задание_8_25
+namespace Задание_8_26
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int i, L, j, I, e, l;
+            int i, L, I, l;
             l = 1;
-            j = 0;
             i = 1;
             I = 0;
-            e = 0;
             int n = 0;
-
 
             Console.Write(" Введите данные   ");
             String Q = Console.ReadLine();
@@ -53,38 +50,6 @@ namespace Задание_8_25
             }
 
             Console.Write(" unikalnye  " + n + " \n");
-            i = 0;
-            I = 0;
-            n = 0;
-            e = 0;
-            l = 0;
-            string [] arr2 = new string[L];
-            //////////
-            string A= " ";
-           
-                i = 0;
-               
-                while (L > i + I)
-                {
-                   
-                    if (arr2[i] != arr[ i]&& A != arr[i])
-                    { arr2[i] = arr[ i];
-                       A = arr2[I]; }
-                    i++;
-
-                }
-               
-                
-              
-           
-
-            //
-            i = 0;
-            while (i <= n)
-            {
-                Console.Write(arr2[i]);
-                i++;
-            }
         }
     }
 }
