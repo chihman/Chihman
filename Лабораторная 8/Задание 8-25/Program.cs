@@ -18,7 +18,7 @@ namespace Задание_8_25
             e = 0;
             int n = 0;
 
-
+             
             Console.Write(" Введите данные   ");
             String Q = Console.ReadLine();
 
@@ -55,7 +55,7 @@ namespace Задание_8_25
             Console.Write(" unikalnye  " + n + " \n");
             i = 0;
             I = 0;
-            n = 0;
+           
             e = 0;
             l = 0;
             string [] arr2 = new string[L];
@@ -64,23 +64,24 @@ namespace Задание_8_25
            
                 i = 0;
                
-                while (L > i + I)
+                while (L >  I)
                 {
-                   
-                    if (arr2[i] != arr[ i]&& A != arr[i])
-                    { arr2[i] = arr[ i];
-                       A = arr2[I]; }
+                while (i < L)
+                {
+                    if (arr2[I] != arr[i] && A != arr[i])
+                    {
+                        arr2[I] = arr[i];
+                        A = arr2[I];
+                        i = L;
+                    }
                     i++;
-
                 }
-               
-                
-              
-           
-
+                I++;
+                i = I;
+                }
             //
             i = 0;
-            while (i <= n)
+            while (i < n)
             {
                 Console.Write(arr2[i]);
                 i++;

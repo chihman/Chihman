@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;//обязательная строка
-
-namespace Задание_9_2
+using System.IO;
+namespace Задание_9_4
 {
     class Program
     {
         static void Main(string[] args)
         {
+          
             int i = 0;
+            Console.WriteLine("Vvedite nomer testa ");
             int n = int.Parse(Console.ReadLine());
+          
             if (!File.Exists("..\\..\\test" + n + ".txt")) //проверяет наличие файла
             {
                 Console.Write("oshibka fail ne sushestvuet");
@@ -24,16 +26,27 @@ namespace Задание_9_2
                 Console.Write("Файл пуст");
                 return;
             }
+            String b = "";
+            int x = 0;
             while (!reader.EndOfStream)
             {
                 String line = reader.ReadLine(); //читает первую строку
-                if (i == 0)
-                {                   
-                    Console.Write(line + " ");
-                                   }
-                i++;
+                                                 //
+                String[] a = line.Split(' ');
+                int L = a.Length;
+                i = 0;
+                while (i < L)
+                {
+                    if (a[i] != b)
+                    {
+                        x++;
+                    }
+                    i++;
+                   
+                }
+                Console.Write(x + " ");
             }
-            Console.Write(i-1 + " ");
+
         }
     }
 }

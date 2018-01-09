@@ -5,20 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;//обязательная строка
 
-namespace Задание_9_2
+namespace Задание_9_3
 {
     class Program
     {
         static void Main(string[] args)
-        {
-            int i = 0;
+        {// otkryt' fail iz seti
+          
             int n = int.Parse(Console.ReadLine());
-            if (!File.Exists("..\\..\\test" + n + ".txt")) //проверяет наличие файла
+            string A = "Z:\\Основы алгоритмизации 2017-2018\\csharp\\files\\task4954\\test" + n + ".txt";
+            if (!File.Exists(A)) //проверяет наличие файла
             {
                 Console.Write("oshibka fail ne sushestvuet");
                 return;
             }
-            StreamReader reader = new StreamReader("..\\..\\test" + n + ".txt"); //читает файл
+            StreamReader reader = new StreamReader(A); //читает файл
             if (reader.EndOfStream)
             {
                 Console.Write("Файл пуст");
@@ -27,13 +28,8 @@ namespace Задание_9_2
             while (!reader.EndOfStream)
             {
                 String line = reader.ReadLine(); //читает первую строку
-                if (i == 0)
-                {                   
-                    Console.Write(line + " ");
-                                   }
-                i++;
+                Console.Write(line + " ");
             }
-            Console.Write(i-1 + " ");
         }
     }
 }
