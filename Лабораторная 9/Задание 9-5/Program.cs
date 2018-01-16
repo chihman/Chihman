@@ -25,7 +25,7 @@ namespace Задание_9_5
                 Console.Write("Файл пуст");
                 return;
             }
-            String b = "";
+            int a = 0;
             int J = 0;
             int x = 0;
             while (!reader.EndOfStream)
@@ -34,19 +34,23 @@ namespace Задание_9_5
                 int L = line.Length;
                 i = 0;
                 x = 0;
+                a = 0;
                 while (i + 1 < L)
                 {
+                    
+                    x = 0;
                     if (line[i] == line[i + 1])
                     {
                         x++;
-                        if (x == 1)
+                        if (x == 1&&a<1)
                         {
-                            J++;
+                            J=J+1;
                             x = 0;
+                            a++;
                         }
                     }
                     i++;
-
+                    
                 }
             }
 

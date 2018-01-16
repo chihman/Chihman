@@ -10,7 +10,7 @@ namespace Задание_9_8
     {
         static void Main(string[] args)
         {
-          
+
             Console.WriteLine("Vvedite nomer testa ");
             int n = int.Parse(Console.ReadLine());
 
@@ -25,27 +25,32 @@ namespace Задание_9_8
                 Console.Write("Файл пуст");
                 return;
             }
-          
+            int a = 0;
+            int i = -1;
             while (!reader.EndOfStream)
             {
                 String line = reader.ReadLine(); //читает первую строку
                 int L = line.Length;
 
                 char[] invalidPathChars = Path.GetInvalidPathChars(); //некорректное имя
-                Console.WriteLine("nekorektnoe imja ");
+                while (a < 35)
+                {
+                    if (line.Contains(invalidPathChars[a]))
+                    {
+                        i++;
+                    }
 
-
-                String result = Path.GetFileNameWithoutExtension(line); //выделяет имя
-                Console.Write(result +" " );
-
+                    a++;
+                }
+                if (i <-1)
+                {
+                    String result = Path.GetFileNameWithoutExtension(line); //выделяет имя
+                    Console.Write(result + " ");
+                }
+                if (i >= -1) { Console.Write("nekorektnoe imja "); }
             }
 
-
-
-
         }
-
-
     }
 }
 
