@@ -56,6 +56,15 @@ namespace Задание_8_4
                     i++;
                 }
             }
+
+
+            /// деление массива
+            Console.Write(" Введите данные   ");
+            String Q = Console.ReadLine();
+
+            String[] arr = Q.Split(' ');
+            L = arr.Length;// dlinna massiva
+
         }
     }
 }
