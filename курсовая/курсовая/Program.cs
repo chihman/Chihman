@@ -18,53 +18,47 @@ namespace курсовая
                 Console.Write("oshibka fail ne sushestvuet");
                 return;
             }
-            StreamReader reader = new StreamReader("..\\..\\test" + n + ".txt"); //читает файл
+            StreamReader reader = new StreamReader("..\\..\\test" + n + ".txt", Encoding.GetEncoding("Windows-1251")); //читает файл
             if (reader.EndOfStream)
             {
                 Console.Write("Файл пуст");
                 return;
             }
-            int L = 0, LL = 0, i = 0, j = 0, I = 0;
+            int L = 0, LL = 0, j = 0;
             string a;
+
+            String filename = "OTVET.html";//
+            StreamWriter writer = new StreamWriter(filename, false, Encoding.Unicode);// создание файла для вывода
+
             while (!reader.EndOfStream)
             {
                 String line = reader.ReadLine(); //читает первую строку
-
                 String[] arr = line.Split(' '); //создаёт массив с разделителем "пробел"
                 L = arr.Length;// длина массива
-                String x, y;
-                int nomer = 0, revers = 0, S = 0;
                 j = 0;
                 while (j < L)
                 {
                     a = arr[j];//одно слово
-                    LL = a.Length;// длина slova
                     a = a.ToLower();//перевод в нижний регистр
-                    revers = LL-1;// длина для вычитания
-                    nomer = 0; // длина для прибавления
-                    i++;
-                    I = 0;
-                    while (I < LL/2)
+                    a = a.Replace(".", " ");
+                    a = a.Replace(",", " ");
+                    a = a.Replace("-", " ");
+                   string input = a;
+                    char[] inputarray = input.ToCharArray();
+                    Array.Reverse(inputarray);// реверс значений
+                    string output = new string(inputarray);
+                    LL = output.Length;
+                    if (output == a && LL > 2)
                     {
-                        x = a.Substring(nomer, 1);
-                        y = a.Substring(revers, 1);
-                        nomer=nomer+1;
-                        revers=revers-1;
-                        if (x == y)
-                        {
-                            S++;
-                        }
-                        if (S == LL / 2 || S == LL / 2 + 1)
-                        {
-                            Console.WriteLine(a);
-                        }
-                        I++;
-
+                        Console.WriteLine(a);
+                        writer.WriteLine(a);//вывод в файл
                     }
-                    j++;
+
+                        j++;
                 }
 
             }
+            writer.Close();//вывод в файл конец
         }
     }
 }
