@@ -24,49 +24,53 @@ namespace Задание_9_10
                 Console.Write("Файл пуст");
                 return;
             }
-            int i = 0, x = 0, b = 0, b2 = 0, y = 0, j = 0, r = 0;
+            int i = 0, x = 0, b = 0, x1 = 0, y1=0,y = 0, j = 0, r = 0, Y = 0;
             while (!reader.EndOfStream)
             {
                 String line = reader.ReadLine(); //читает первую строку
                 int L = line.Length;
-
+                r = r++;//колличество строк
                 //
 
                 j = line.Length;
                 i = 0;
-                while (i < j) { 
-                x = line.IndexOf("{", i);
 
-                if (x == i)
+                
+                while (i < j)
                 {
-                    b = b + 1;
+                    x = line.IndexOf("{", i);
+                    y = line.IndexOf("}", i);
+                    if (x == i)
+                    {
+                        b = b + 1;
+                        x1++;
+                    }
+                    if (y == i)
+                    {
+                        b = b - 1;
+                        y1++;
+                    }
+                    if (Y < b)
+                    { Y = b; }
+                    i++;
 
                 }
-
-                y = line.IndexOf("}", i);
-                if (y == i)
-                {
-                  //  b2 = b2 - 1;
-
-                }
-                i = i + 1;
-            }
-                    r = b+b2;
-               
                 
-                
-                //     if (j % 2 != 0)
-                //    {
-                //        if (b < 0)
-                //       {
-                //            Console.Write(" неожиданная закрывающаяся скобка ");
-                //            return;
-                //       }
-                //        Console.Write(" Неожиданный конец строки ");
-                //   }
 
             }
-            Console.Write(r);
+            if (y1 > x1)
+            {
+                Console.Write(" неожиданная закрывающаяся скобка ");
+                return;
+            }
+            if (x1!=y1)
+            {
+
+                Console.Write(" Неожиданный конец файла ");
+                return;
+            }
+           
+            Console.Write(Y);
         }
     }
 }

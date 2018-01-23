@@ -26,28 +26,42 @@ namespace Задание_9_8
                 return;
             }
             int a = 0;
-            int i = -1;
+            int i = 0;
+            string A = " ";
             while (!reader.EndOfStream)
             {
                 String line = reader.ReadLine(); //читает первую строку
                 int L = line.Length;
 
-                char[] invalidPathChars = Path.GetInvalidPathChars(); //некорректное имя
-                while (a < 35)
+                //char[] invalidPathChars = Path.GetInvalidPathChars(); //некорректное имя
+               
+           
+                    String result = Path.GetFileNameWithoutExtension(line); //выделяет имя
+                int LL = result.Length;
+                a = 0;
+                i = 0;
+                while (a < LL)
                 {
-                    if (line.Contains(invalidPathChars[a]))
+                    A = Convert.ToString(result[a]);
+                    if (A == "*" || A == "|" || A == "\\" || A == ":" || A == "\"" || A == "<" || A == ">" || A == "?" || A == "/")
                     {
                         i++;
+                        break;
                     }
 
                     a++;
                 }
-                if (i <-1)
+
+                if (i > 0)
                 {
-                    String result = Path.GetFileNameWithoutExtension(line); //выделяет имя
+                    Console.Write("Некорректное имя файла ");
+                    break;
+
+                }
+                else
+                {
                     Console.Write(result + " ");
                 }
-                if (i >= -1) { Console.Write("nekorektnoe imja "); }
             }
 
         }

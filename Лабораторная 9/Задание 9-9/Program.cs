@@ -31,13 +31,17 @@ namespace Задание_9_9
                 int L = line.Length;
 
                 int x = line.IndexOf("@");
-                if (x == -1)
+                if (x == 0 || x == L || x == -1)
                 {
-                    Console.Write("nekorektny adres ");
-                    return;
+                    Console.Write("некорректный адрес  ");
+
+
                 }
-                String X = line.Substring(0, x);
-                Console.Write(X + " ");
+                else
+                {
+                    String X = line.Substring(0, x);
+                    Console.Write(X + " ");
+                }
             }
         }
     }

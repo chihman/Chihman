@@ -32,6 +32,16 @@ namespace Задание_9_5
             {
                 String line = reader.ReadLine(); //читает первую строку
                 int L = line.Length;
+                if (L > 4)
+                {
+                    Console.Write("Запись длиннее  четырёх символов ");
+                    return;
+                }
+                if (L < 4)
+                {
+                    Console.Write("Запись короче  четырёх символов ");
+                    return;
+                }
                 i = 0;
                 x = 0;
                 a = 0;
