@@ -24,6 +24,15 @@ namespace курсовая
                 Console.Write("Файл пуст");
                 return;
             }
+
+            FileInfo file = new FileInfo("..\\..\\test" + n + ".txt");//Проверка размера файла
+            long Gb = file.Length / 1024 / 1024 / 1024;
+            if (Gb >= 3)
+            {
+                Console.WriteLine("ОШИБКА! Исходный файл более 2Гб ");
+                return;
+            }
+
             int L = 0, LL = 0, j = 0;
             string a;
 
@@ -40,10 +49,10 @@ namespace курсовая
                 {
                     a = arr[j];//одно слово
                     a = a.ToLower();//перевод в нижний регистр
-                    a = a.Replace(".", " ");
-                    a = a.Replace(",", " ");
-                    a = a.Replace("-", " ");
-                   string input = a;
+                    a = a.Replace(".", "");
+                    a = a.Replace(",", "");
+                    a = a.Replace("-", "");
+                    string input = a;
                     char[] inputarray = input.ToCharArray();
                     Array.Reverse(inputarray);// реверс значений
                     string output = new string(inputarray);
@@ -54,7 +63,7 @@ namespace курсовая
                         writer.WriteLine(a);//вывод в файл
                     }
 
-                        j++;
+                    j++;
                 }
 
             }
