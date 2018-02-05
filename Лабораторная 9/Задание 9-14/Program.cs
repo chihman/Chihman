@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-namespace Задание_9_11
+namespace Задание_9_14
 {
     class Program
     {
@@ -13,28 +13,44 @@ namespace Задание_9_11
             Console.WriteLine("Vvedite nomer testa ");
             int n = int.Parse(Console.ReadLine());
 
-            if (!File.Exists("..\\..\\test" + n + ".css")) //проверяет наличие файла
+            if (!File.Exists("..\\..\\data" + n + ".txt")) //проверяет наличие файла
             {
                 Console.Write("oshibka fail ne sushestvuet");
                 return;
             }
-            StreamReader reader = new StreamReader("..\\..\\test" + n + ".css"); //читает файл
+            StreamReader reader = new StreamReader("..\\..\\data" + n + ".txt"); //читает файл
             if (reader.EndOfStream)
             {
                 Console.Write("Файл пуст");
                 return;
             }
-            String text;
-            int x;
+            
+
+
+            int x=0;
+
             while (!reader.EndOfStream)
             {
-                x = 0;
+               
+
+
                 String line = reader.ReadLine(); //читает первую строку
+                if (!Int32.TryParse(line, out n))
+                {
+                    Console.Write("oshibka  "); //обработка, если не число 
+                    return;
+                }
+
                 int L = line.Length;
-                 x = line.IndexOf("{");
-                if (x > 0){
-                   Console.WriteLine( text = line.Substring(0, x)); }
+                x = x + Convert.ToInt32(line);
+
+
+
+
+               
+
             }
+            Console.Write(x + " ");
         }
     }
 }

@@ -26,8 +26,8 @@ namespace курсовая
             }
 
             FileInfo file = new FileInfo("..\\..\\test" + n + ".txt");//Проверка размера файла
-            long Gb = file.Length / 1024 / 1024 / 1024;
-            if (Gb >= 3)
+            long Gb = file.Length / 1024 / 1024 ;
+            if (Gb >= 2048)
             {
                 Console.WriteLine("ОШИБКА! Исходный файл более 2Гб ");
                 return;
@@ -51,6 +51,8 @@ namespace курсовая
                     a = a.ToLower();//перевод в нижний регистр
                     a = a.Replace(".", "");
                     a = a.Replace(",", "");
+                    a = a.Replace("!", "");
+                    a = a.Replace("?", "");
                     a = a.Replace("-", "");
                     string input = a;
                     char[] inputarray = input.ToCharArray();
