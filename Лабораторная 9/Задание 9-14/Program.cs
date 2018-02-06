@@ -25,22 +25,16 @@ namespace Задание_9_14
                 return;
             }
             
-
-
             int x=0;
 
             while (!reader.EndOfStream)
             {
-               
-
-
                 String line = reader.ReadLine(); //читает первую строку
                 if (!Int32.TryParse(line, out n))
                 {
                     Console.Write("oshibka  "); //обработка, если не число 
                     return;
                 }
-
                 int L = line.Length;
                 x = x + Convert.ToInt32(line);
 

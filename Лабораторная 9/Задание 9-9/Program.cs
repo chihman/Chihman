@@ -29,8 +29,10 @@ namespace Задание_9_9
             {
                 String line = reader.ReadLine(); //читает первую строку
                 int L = line.Length;
-
+                
                 int x = line.IndexOf("@");
+                if (L - 1==x)
+                { }
                 if (x == 0 || x == L || x == -1)
                 {
                     Console.Write("некорректный адрес  ");

@@ -26,8 +26,8 @@ namespace курсовая
             }
 
             FileInfo file = new FileInfo("..\\..\\test" + n + ".txt");//Проверка размера файла
-            long Gb = file.Length / 1024 / 1024 ;
-            if (Gb >= 2048)
+            long Mb = file.Length / 1024 / 1024 ;
+            if (Mb >= 2048)
             {
                 Console.WriteLine("ОШИБКА! Исходный файл более 2Гб ");
                 return;

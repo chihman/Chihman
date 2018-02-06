@@ -36,17 +36,16 @@ namespace Задание_9_8
                 //char[] invalidPathChars = Path.GetInvalidPathChars(); //некорректное имя
                
            
-                    String result = Path.GetFileNameWithoutExtension(line); //выделяет имя
-                int LL = result.Length;
+                int LL = line.Length;
                 a = 0;
                 i = 0;
                 while (a < LL)
                 {
-                    A = Convert.ToString(result[a]);
-                    if (A == "*" || A == "|" || A == "\\" || A == ":" || A == "\"" || A == "<" || A == ">" || A == "?" || A == "/")
+                    A = Convert.ToString(line[a]);
+                    if (A == "*" || A == "|"  ||  A == "\"" || A == "<" || A == ">" || A == "?" || A == "/")
                     {
                         i++;
-                        break;
+                       
                     }
 
                     a++;
@@ -55,11 +54,13 @@ namespace Задание_9_8
                 if (i > 0)
                 {
                     Console.Write("Некорректное имя файла ");
-                    break;
+                  
 
                 }
                 else
                 {
+
+                    String result = Path.GetFileNameWithoutExtension(line); //выделяет имя
                     Console.Write(result + " ");
                 }
             }
