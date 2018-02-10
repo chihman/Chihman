@@ -10,22 +10,22 @@ namespace курсовая
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Vvedite nomer testa ");
-            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите имя файла txt (например test1): ");
+           String n =Console.ReadLine();
 
-            if (!File.Exists("..\\..\\test" + n + ".txt")) //проверяет наличие файла
+            if (!File.Exists("..\\..\\" + n + ".txt")) //проверяет наличие файла
             {
                 Console.Write("oshibka fail ne sushestvuet");
                 return;
             }
-            StreamReader reader = new StreamReader("..\\..\\test" + n + ".txt", Encoding.GetEncoding("Windows-1251")); //читает файл
+            StreamReader reader = new StreamReader("..\\..\\" + n + ".txt", Encoding.GetEncoding("Windows-1251")); //читает файл
             if (reader.EndOfStream)
             {
                 Console.Write("Файл пуст");
                 return;
             }
 
-            FileInfo file = new FileInfo("..\\..\\test" + n + ".txt");//Проверка размера файла
+            FileInfo file = new FileInfo("..\\..\\" + n + ".txt");//Проверка размера файла
             long Mb = file.Length / 1024 / 1024 ;
             if (Mb >= 2048)
             {
@@ -59,7 +59,7 @@ namespace курсовая
                     Array.Reverse(inputarray);// реверс значений
                     string output = new string(inputarray);
                     LL = output.Length;
-                    if (output == a && LL > 2)
+                    if (output == a && LL > 1)
                     {
                         Console.WriteLine(a);
                         writer.WriteLine(a);//вывод в файл
@@ -67,7 +67,6 @@ namespace курсовая
 
                     j++;
                 }
-
             }
             writer.Close();//вывод в файл конец
         }
